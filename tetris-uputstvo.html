@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="C:\Users\neman\Visual Studio Code\Web Design\bootstrap-5.3.3-dist\css\bootstrap.min.css">
+    <script src="C:\Users\neman\Visual Studio Code\Web Design\bootstrap-5.3.3-dist\js\bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link href="tetris-uputstvo.css" rel="stylesheet" type="text/css">
+
+    <!-- js -->
+    <script src="uputstvo.js"></script>
+
+    <title>Main page</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm">
+            <a href="tetris-uputstvo.html" id="title">
+                Tetris Game
+            </a>
+        </nav>
+        <hr class="navbar-divider">
+
+        <div class="row" style="background-color: rgb(210, 255, 170); padding-top: 5px;">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <table class="table table-dark table-bordered text-center">
+                    <tr>
+                        <th colspan="2" style="font-size: 20px;">INSTRUCTIONS</th>
+                    </tr>
+                    <tr>
+                        <td><b>Move left</b></td>
+                        <td>Left Arrow key</td>
+                    </tr>
+                    <tr>
+                        <td><b>Move right</b></td>
+                        <td>Right Arrow key</td>
+                    </tr>
+                    <tr>
+                        <td><b>Move down</b></td>
+                        <td>Down Arrow key</td>
+                    </tr>
+                    <tr>
+                        <td><b>Rotate left</b></td>
+                        <td>Up Arrow key</td>
+                    </tr>
+                    <tr>
+                        <td><b>Rotate right</b></td>
+                        <td>Z key</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+
+        <div class="row text-center" id="settings">
+            <h2><b>Settings:</b></h2>
+        </div>
+
+        <div class="row possible_objects" style="background-color: rgb(210, 255, 170); padding-top: 10px;">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2" style="margin: auto;">
+                <input type="checkbox" class="form-check-input" id="line_check" checked>
+                <table class="table table-bordered" style="display: inline-block;">
+                    <tr>
+                        <td class="lineColor"></td>
+                        <td class="lineColor"></td>
+                        <td class="lineColor"></td>
+                        <td class="lineColor"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-2">
+                <input type="checkbox" class="form-check-input" id="square_check" checked>
+                <table class="table" style="display: inline-block;">
+                    <tr>
+                        <td class="squareColor"></td>
+                        <td class="squareColor"></td>
+                    </tr>
+                    <tr>
+                        <td class="squareColor"></td>
+                        <td class="squareColor"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-2">
+                <input type="checkbox" class="form-check-input" id="L1_check" checked>
+                <table class="table" style="display: inline-block;">
+                    <tr>
+                        <td class="L1Color"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="L1Color"></td>
+                        <td class="L1Color"></td>
+                        <td class="L1Color"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-2">
+                <input type="checkbox" class="form-check-input" id="L2_check" checked>
+                <table class="table" style="display: inline-block;">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="L2Color"></td>
+                    </tr>
+                    <tr>
+                        <td class="L2Color"></td>
+                        <td class="L2Color"></td>
+                        <td class="L2Color"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+
+        <div class="row possible_objects" style="background-color: rgb(210, 255, 170);">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-2">
+                <input type="checkbox" class="form-check-input" id="Z1_check" checked>
+                <table class="table" style="display: inline-block;">
+                    <tr>
+                        <td></td>
+                        <td class="Z1Color"></td>
+                        <td class="Z1Color"></td>
+                    </tr>
+                    <tr>
+                        <td class="Z1Color"></td>
+                        <td class="Z1Color"></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-2">
+                <input type="checkbox" class="form-check-input" id="Z2_check" checked>
+                <table class="table" style="display: inline-block;">
+                    <tr>
+                        <td class="Z2Color"></td>
+                        <td class="Z2Color"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="Z2Color"></td>
+                        <td class="Z2Color"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-2">
+                <input type="checkbox" class="form-check-input" id="T_check" checked>
+                <table class="table" style="display: inline-block;">
+                    <tr>
+                        <td></td>
+                        <td class="T1Color"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="T1Color"></td>
+                        <td class="T1Color"></td>
+                        <td class="T1Color"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+
+        <div class="row text-center" style="background-color: rgb(210, 255, 170); padding-top: 10px;">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <span><b>Choose level:</b></span>&nbsp;
+                <input type="radio" class="form-check-input" name="level" id="level_1" checked> <label for="level_1">Easy</label>&nbsp;
+                <input type="radio" class="form-check-input" name="level" id="level_2"> <label for="level_2">Medium</label>&nbsp;
+                <input type="radio" class="form-check-input" name="level" id="level_3"> <label for="level_3">Hard</label>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+
+        <div class="row text-center" style="background-color: rgb(210, 255, 170); padding-top: 25px; padding-bottom: 10px;">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <a href="tetris-igra.html" style="text-decoration: none;">
+                    <button class="btn btn-primary" onclick="getSettings()">Play Game</button>
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="tetris-rezultati.html" style="text-decoration: none;">
+                    <button class="btn btn-warning">Results</button>
+                </a>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
