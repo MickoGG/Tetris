@@ -1,0 +1,17 @@
+body {
+    background-color: wheat;
+}
+
+nav {
+    background-color: rgb(255, 203, 106);
+}
+
+#title {
+    margin: auto;
+    text-decoration: none;
+    color: wheat;
+    -webkit-text-stroke: black 1px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace    /* Georgia, 'Times New Roman', Times, serif */
+}
